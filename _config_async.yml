@@ -1,0 +1,91 @@
+theme:
+  switch: true
+  default: style-dark
+
+  favicon:
+  logo: /img/favicon.svg # logo | 顶部 logo
+  icon16: /img/favicon.svg # icon 16*16
+  icon32: /img/favicon.svg # icon 32*32
+  apple_touch_icon: # Apple touch icon | iOS 添加到桌面时显示图标
+  webmanifest: # Webmanifest | 应用程序清单文件
+  visibilitychange: false # Enable toggle title display when leaving | 开启离开时切换标题显示
+  hidden: /failure.ico # Displays an icon when not visible | 离开窗口时显示图标
+  show_text: favicon.show_text # Displays text when the window is activated | 激活窗口时显示文字
+  hide_text: favicon.hide_text # Leave the window to display text | 离开窗口显示文字
+
+  assets:
+  internal_provider: local # The cdn configuration of the js inside the theme | 主题脚本的 CDN 配置
+  third_party_provider: unpkg # cdn configuration of third-party js | 第三方插件 CDN 配置
+  plugin: ## The plug-in used by the theme
+    hexo_theme_async:
+      rowcss: css/plugins/bootstrap.row.css
+      typing: js/plugins/typing.js
+      search: js/plugins/local_search.js
+      danmu: js/plugins/danmu.js
+      main: js/main.js
+  icons: ## Icon configuration
+    type: font # font symbol
+    css: css/plugins/font-awesome.min.css # icon css
+    js: # icon js
+
+    assets:
+  icons:
+    type: font # font symbol
+    css:
+    js:
+
+    user:
+  name: ThemeAsync # Nickname | 昵称
+  first_name: Theme # 名
+  last_name: Async # 姓
+  email: # email | 电子邮箱
+  domain: 站点域名 # Domain | 站点域名
+  avatar: /img/avatar.jpg # Avatar | 站点头像
+  describe: 网站简介。 # Describe | 网站简介
+
+  sidebar:
+  typed_text_prefix: I`m # 打字动画固定前缀
+  typed_text: # 打字效果切换条目 <string[]>
+
+
+  info: # 侧栏信息 <object[]> {{"key:名称":"","val:值":""}}
+    - key: sidebar.residence
+      val: Mars
+  social: # 社交图标 <object[]> {{"name:名称":"","icon:图标":"","url:地址":""}}
+    - name: Github
+      icon: fab fa-github
+      url: https://github.com
+
+
+      sidebar:
+  typed_text_prefix: I`m
+  typed_text: ["Web Developer"]
+
+
+  banner:
+  use_cover: false # Use the cover image for article details | 文章详情使用封面图
+  danmu: # danmu | 弹幕
+    enable: false # enable | 启用
+    el: .trm-banner # el | 弹幕容器
+  default: # 默认横幅配置
+    type: img # 横幅类型 <[img,slideshow,video]>
+    bgurl: /img/banner.png # 背景图地址
+    banner_text: Hi my new friend! # 横幅描述
+    position: top # 同 CSS object-position
+    fit: cover # 同 CSS object-fit
+  index: ## 首页横幅
+    banner_title: 树深时见鹿，<br>溪午不闻钟。
+    banner_text: Hi my new friend!
+    video_url: # 视频地址
+  archive: ## 归档页横幅
+    banner_title: 云间连下榻，<br>天上接行杯。
+    banner_text: The article archive
+  links: ## 友链页横幅
+    banner_title: 莫愁前路无知己，<br>天下谁人不识君。
+    banner_text: A link to a friend's website
+  comment: ## 评论页横幅
+    banner_title: 醉后不知天在水，<br>满船清梦压星河。
+    banner_text: The magic tree hole
+  about: ## 关于页横幅
+    banner_title: 醉后不知天在水，<br>满船清梦压星河。
+    banner_text: About me
